@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Ankit Kumar Roy | Frontend Developer Portfolio">
+    <meta name="keywords" content="Frontend Developer, Web Developer, Portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Ankit Kumar Roy">
+
+    <title>Ankit Kumar Roy | Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+</script>
+
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+
+        <!-- Mobile Menu Icon -->
+        <i class="fa-solid fa-bars" id="menu-icon" aria-label="Open Menu"></i>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Theme Toggle -->
+        <i class="fa-solid fa-moon" id="theme-toggle" aria-label="Toggle Theme"></i>
+    </header>
+
+    <!-- ===================== HOME ===================== -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Ankit Kumar Roy</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+
+            <p>
+                Passionate Computer Applications Graduate | Skilled in HTML, CSS, JavaScript, Java & PL/SQL |
+                Intern at MoHUA & Juniper Networks | Certified in Process Mining and Database Design
+            </p>
+
+            <div class="social-media">
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ankitkumarroy000/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+
+            <a href="Ankit-Resume.pdf" class="btn" download>Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/DSC02583.JPG" alt="Ankit Kumar Roy">
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/download.png" alt="About Ankit">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+
+            <p>
+                I am a highly motivated Computer Applications graduate with a strong foundation in
+                web development, programming, and database management. I enjoy building scalable,
+                responsive, and user-friendly web applications.
+            </p>
+
+            <a href="#portfolio" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Responsive, modern websites using HTML, CSS, JavaScript & React.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Clean, user-focused designs with accessibility and usability in mind.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Frontend-focused mobile-ready applications and interfaces.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="img/img1.jpg" alt="RozgarJanKalyan Project">
+                <div class="portfolio-layer">
+                    <h4>RozgarJanKalyan</h4>
+                    <p>Job platform for daily wage workers based on skill matching.</p>
+                    <a href="#" aria-label="Project Link">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/img2.jpg" alt="Weather App">
+                <div class="portfolio-layer">
+                    <h4>Weather App</h4>
+                    <p>Responsive weather application with real-time data.</p>
+                    <a href="#">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/img3.jpg" alt="Spotify Clone">
+                <div class="portfolio-layer">
+                    <h4>Spotify Clone</h4>
+                    <p>Music streaming UI clone with dynamic JS functionality.</p>
+                    <a href="#">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <input type="number" name="phone" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2026 Ankit Kumar Roy | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home" aria-label="Back to Top">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
